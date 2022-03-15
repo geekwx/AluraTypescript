@@ -1,5 +1,5 @@
-export function inspect(){
-    return function(
+
+    export function inspect(
         target: any,
         propertyKey: string,
         descriptor: PropertyDescriptor
@@ -16,10 +16,11 @@ export function inspect(){
         }
         return descriptor;
     }
-}
+
 
 /*
 -> Esqueleto para qualquer funcado decorator
+Usado para adicionar para passar parametro 
 export function inspect(){
     return function(
         target: any,
